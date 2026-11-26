@@ -7,8 +7,8 @@ window.geometry("1920x1080")
 
 lbRotulo = tk.Label(
     window,
-    text="NOVA ORDEM DE SERVIÇO.",
-    font=("Arial", 30),
+    text="Nova Ordem de Serviço﹕",
+    font=("Arial", 30, "bold"),
     fg="darkblue"
 )
 

@@ -21,4 +21,14 @@ label.pack(pady=5)
 
 lbRotulo.pack(pady=20)
 
+cliente = tk.Entry(
+    root,
+    font=("Segoe UI", 12),
+    highlightthickness=2,
+    highlightbackground="#cbd5e1",  # cor sem foco
+    highlightcolor="#2563eb",       # cor quando recebe foco
+    relief="flat"
+)
+campo.pack(fill="x", pady=(0, 12))
+
 window.mainloop()

@@ -1,4 +1,5 @@
 import tkinter as tk
+from PIL import Image, ImageTk
 
 window = tk.Tk()
 window.title("HelpYouOut - Assist. Técnica")
@@ -6,17 +7,18 @@ window.geometry("1920x1080")
 
 lbRotulo = tk.Label(
     window,
-    text="Bem-vindo(a) ao sistema de cadastro.",
+    text="NOVA ORDEM DE SERVIÇO.",
     font=("Arial", 30),
     fg="darkblue"
 )
 
-import tkinter as tk
+img = Image.open("Untitled458_20261126150943.png")
+img.thumbnail((600, 240)) 
+foto = ImageTk.PhotoImage(img)
 
-logo = tk.PhotoImage(file="Untitled458_20261126150943.png")
-label = tk.Label(root, image=logoo)
-label.pack(padx=20, pady=20)
+label = tk.Label(window, image=foto)
+label.pack(pady=5)
 
-lbRotulo.pack(pady=50)
+lbRotulo.pack(pady=20)
 
 window.mainloop()
